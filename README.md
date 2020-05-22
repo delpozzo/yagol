@@ -60,6 +60,10 @@ On my to-do list to make an Xcode project.
 
 ## Instructions
 
+YaGoL launches by default in a 1024x768 window. This window can be resized and it can even be stretched to span multiple displays. The grid will automatically grow or shrink to fill the window.
+
+The starting grid is a random seed of red cells at 3X speed. You can press the play button to start the simulation, or customize the grid using the controls detailed below.
+
 ### Buttons
 
 - **Grid Cells** - When the simulation is stopped, cells can be individually toggled on or off (alive or dead).
@@ -74,20 +78,7 @@ On my to-do list to make an Xcode project.
 
 ## FAQ
 
-**What is the maximum number of cells that YaGoL can handle?**
-
-The maximum number of cells is defined in grid.c:
-
-```
-#define MAXCELLSX 550
-#define MAXCELLSY 550
-```
-
-This results in a total of 302,500 cells which should be enough to fill an 8K display with small (16x16) cells, or two 8K displays with large (32x32) cells.
-
-Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
-
-**I am getting "Unable to load image" errors and the application won't launch!**
+**The application won't launch and/or I am getting "Unable to load image" errors!**
 
 This is due to the fact that YaGoL currently uses relative pathing for loading the sprites in the `images/` directory. Enter the yagol directory first, then run the application:
 
@@ -110,6 +101,19 @@ Don't forget to set the execute bit on the shell script you create:
 `chmod +x yagol.sh`
 
 It's on my to-do list to either make an installer, config file that points to the resources path, or some other source code change to locate the resources path so this won't be necessary in the future.
+
+**What is the maximum number of cells that YaGoL can handle?**
+
+The maximum number of cells is defined in grid.c:
+
+```
+#define MAXCELLSX 550
+#define MAXCELLSY 550
+```
+
+This results in a total of 302,500 cells which should be enough to fill an 8K display with small (16x16) cells, or two 8K displays with large (32x32) cells.
+
+Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
 
 **What about a Windows or Mac version?**
 

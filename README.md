@@ -15,6 +15,7 @@ YaGoL is an interactive Game of Life sandbox with a retro LED style. It is writt
 - Two cell sizes: small (16x16) or large (32x32)
 
 ![Screenshot](screenshots/yagol-red-small.png?raw=true)
+
 [Additional Screenshots Here](https://github.com/delpozzo/yagol/tree/master/screenshots)
 
 ## Dependencies

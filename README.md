@@ -78,8 +78,10 @@ On my to-do list to make an Xcode project.
 
 The maximum number of cells is defined in grid.c:
 
-`#define MAXCELLSX 550`
-`#define MAXCELLSY 550`
+```
+#define MAXCELLSX 550`
+#define MAXCELLSY 550
+```
 
 This results in a total of 302,500 cells which should be enough to fill an 8K monitor, in either verical or horizonal layout, with small (16x16) cells, or two 8K monitors with large (32x32) cells.
 

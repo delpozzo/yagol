@@ -34,19 +34,19 @@ To compile YaGoL you will need a gcc compiler as well as the sdl2 and sdl2_image
 
 ### Linux
 
-**Clone the repository:**
+Step 1: Clone the repository
 
 `git clone <>`
 
-**Enter the directory:**
+Step 2: Enter the directory
 
 `cd /path/to/yagol`
 
-**Compile:**
+Step 3: Compile YaGoL
 
 `make`
 
-**Run:**
+Step 4: Run YaGoL
 
 `./yagol`
 
@@ -77,6 +77,7 @@ On my to-do list to make an Xcode project.
 **What is the maximum number of cells that YaGoL can handle?**
 
 The maximum number of cells is defined in grid.c:
+
 `#define MAXCELLSX 550
 #define MAXCELLSY 550`
 
@@ -93,11 +94,13 @@ This is due to the fact that YaGoL currently uses relative pathing for loading t
 You can also create a shell script to make it easier:
 
 yagol.sh:
-`#!/bin/sh
+`
+#!/bin/sh
 
 cd /path/to/yagol
 ./yagol`
 
+`
 It's on my to-do list to either make an installer, config file that points to the resources path, or some other source code change to locate the resources path so this won't be necessary in the future.
 
 **What about a Windows or Mac version?**

@@ -79,7 +79,7 @@ On my to-do list to make an Xcode project.
 The maximum number of cells is defined in grid.c:
 
 ```
-#define MAXCELLSX 550`
+#define MAXCELLSX 550
 #define MAXCELLSY 550
 ```
 

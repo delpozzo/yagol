@@ -95,7 +95,7 @@ This is due to the fact that YaGoL currently uses relative pathing for loading t
 
 `./yagol`
 
-You can also create a shell script to automate this which can be called from menu/desktop shortcuts:
+You can create a shell script to automate this which can be called from menu/desktop shortcuts:
 
 yagol.sh example:
 ```

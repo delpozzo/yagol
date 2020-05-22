@@ -105,6 +105,10 @@ cd /path/to/yagol
 ./yagol
 ```
 
+Don't forget to set the execute bit on the shell script you create:
+
+`chmod +x yagol.sh`
+
 It's on my to-do list to either make an installer, config file that points to the resources path, or some other source code change to locate the resources path so this won't be necessary in the future.
 
 **What about a Windows or Mac version?**

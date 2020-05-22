@@ -102,6 +102,7 @@ Don't forget to set the execute bit on the shell script you create:
 
 It's on my to-do list to either make an installer, config file that points to the resources path, or some other source code change to locate the resources path so this won't be necessary in the future.
 
+
 **What is the maximum number of cells that YaGoL can handle?**
 
 The maximum number of cells is defined in grid.c:
@@ -115,9 +116,11 @@ This results in a total of 302,500 cells which should be enough to fill an 8K di
 
 Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
 
+
 **What about a Windows or Mac version?**
 
 The source code should compile fine on both platforms with little to no modification as long as the proper sdl2 libraries are installed. I just haven't had time yet to make a Visual Studio or Xcode project.
+
 
 **What is the Game of Life?**
 

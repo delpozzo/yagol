@@ -97,7 +97,7 @@ This is due to the fact that YaGoL currently uses relative pathing for loading t
 
 You can also create a shell script to make it easier:
 
-yagol.sh:
+yagol.sh
 ```
 #!/bin/sh
 

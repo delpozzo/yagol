@@ -34,19 +34,19 @@ To compile YaGoL you will need a gcc compiler as well as the sdl2 and sdl2_image
 
 ### Linux
 
-Step 1: Clone the repository
+**Step 1:** Clone the repository
 
 `git clone <>`
 
-Step 2: Enter the directory
+**Step 2:** Enter the directory from step 1
 
 `cd /path/to/yagol`
 
-Step 3: Compile YaGoL
+**Step 3:** Compile YaGoL
 
 `make`
 
-Step 4: Run YaGoL
+**Step 4:** Run YaGoL
 
 `./yagol`
 

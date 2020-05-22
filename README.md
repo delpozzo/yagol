@@ -36,7 +36,7 @@ To compile YaGoL you will need a gcc compiler as well as the sdl2 and sdl2_image
 
 Step 1: Clone the YaGoL repository
 
-`git clone <>`
+`git clone https://github.com/delpozzo/yagol.git`
 
 Step 2: Enter the directory from step 1
 

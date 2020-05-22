@@ -85,7 +85,7 @@ The maximum number of cells is defined in grid.c:
 
 This results in a total of 302,500 cells which should be enough to fill an 8K monitor, in either verical or horizonal layout, with small (16x16) cells, or two 8K monitors with large (32x32) cells.
 
-Feel free to play around with the maxcells numbers. Just keep in mind that if you increase these values more memory will be required by the application.
+Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
 
 **I am getting "Unable to load image" errors and the application won't launch!**
 

@@ -94,13 +94,13 @@ This is due to the fact that YaGoL currently uses relative pathing for loading t
 You can also create a shell script to make it easier:
 
 yagol.sh:
-`
+```
 #!/bin/sh
 
 cd /path/to/yagol
-./yagol`
+./yagol
+```
 
-`
 It's on my to-do list to either make an installer, config file that points to the resources path, or some other source code change to locate the resources path so this won't be necessary in the future.
 
 **What about a Windows or Mac version?**

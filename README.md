@@ -8,10 +8,10 @@ YaGoL is an interactive Game of Life sandbox with a retro LED style. It is writt
 
 - Dynamic grid size that automatically resizes to fill the window
 - Choice of cell colors (red, green, blue, purple, yellow, multi)
-- Individually toggleable cells (dead/alive)
+- Individually toggleable cells
 - Generate a random grid or clear the grid to start fresh
 - Play/stop simulation or step through one iteration at a time
-- Adjustable speed setting (1X, 2X, 3X, 4X, 5x)
+- Adjustable speed setting
 - Two cell sizes: small (16x16) or large (32x32)
 
 ![Screenshot](src/yagol.gif?raw=true)

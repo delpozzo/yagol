@@ -83,15 +83,17 @@ The maximum number of cells is defined in grid.c:
 #define MAXCELLSY 550
 ```
 
-This results in a total of 302,500 cells which should be enough to fill an 8K monitor, in either verical or horizonal layout, with small (16x16) cells, or two 8K monitors with large (32x32) cells.
+This results in a total of 302,500 cells which should be enough to fill an 8K display, in either verical or horizonal layout, with small (16x16) cells, or two 8K displays with large (32x32) cells.
 
 Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
 
 **I am getting "Unable to load image" errors and the application won't launch!**
 
 This is due to the fact that YaGoL currently uses relative pathing for loading the sprites in the `images/` directory. Enter the yagol directory first, and then run the application:
+
 `cd /path/to/yagol`
-./yagol`
+
+`./yagol`
 
 You can also create a shell script to make it easier:
 

@@ -21,10 +21,13 @@ YaGoL is an interactive Game of Life sandbox with a retro LED style. It is writt
 To compile YaGoL you will need a gcc compiler as well as the sdl2 and sdl2_image libraries. Your mileage may vary, but here are some examples of installing these dependencies:
 
 **Arch Linux**
+
 `sudo pacman -S gcc sdl2 sdl2_image`
 
 **Debian / Ubuntu**
+
 `sudo apt-get update`
+
 `sudo apt-get install build-essential libsdl2-dev libsdl2-image-dev`
 
 ## Building
@@ -32,15 +35,19 @@ To compile YaGoL you will need a gcc compiler as well as the sdl2 and sdl2_image
 ### Linux
 
 Clone the repository:
+
 `git clone <>`
 
 Enter the directory:
+
 `cd /path/to/yagol`
 
 Compile:
+
 `make`
 
 Run:
+
 `./yagol`
 
 ### Windows

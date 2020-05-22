@@ -38,7 +38,7 @@ Step 1: Clone the YaGoL repository
 
 `git clone https://github.com/delpozzo/yagol.git`
 
-Step 2: Enter the directory from step 1
+Step 2: Enter the resulting directory from step 1
 
 `cd /path/to/yagol`
 

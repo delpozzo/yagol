@@ -64,7 +64,7 @@ YaGoL launches by default in a 1024x768 window. This window can be resized and i
 
 The starting grid is a random seed of red cells at 3X speed. You can press the play button to start the simulation, or customize the grid using the controls detailed below.
 
-### Buttons
+### Controls
 
 - **Grid Cells** - When the simulation is stopped, cells can be individually toggled on or off (alive or dead).
 - **Play/Stop** - Play or stop the game of life simulation.

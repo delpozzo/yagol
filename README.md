@@ -76,7 +76,7 @@ The starting grid is a random seed of red cells at 3X speed. You can press the p
 - **Clear** - Clears the grid by setting all cells to dead.
 - **Random** - Randomly seed the grid with live cells.
 - **Color** - Change cell color. Choice of red, green, blue, purple, yellow, or multi (random colors).
-- **Spd** - Change simulation speed (1X-5X). Default is 3X.
+- **Spd** - Change simulation speed (1X to 5X). Default is 3X.
 - **Size** - Change cell size to small (16x16) or large (32x32). Default is small.
 - **Quit** - Exit the YaGoL application.
 
@@ -84,7 +84,7 @@ The starting grid is a random seed of red cells at 3X speed. You can press the p
 
 **The application won't launch and/or I am getting "Unable to load image" errors!**
 
-This is due to the fact that YaGoL currently uses relative pathing for loading the sprites in the `images/` directory. Enter the yagol directory first, then run the application:
+This is due to the fact that YaGoL currently uses a relative path for loading the sprites in the `images/` directory. It's on my to-do list to come up with a solution so this won't be a problem in the future. In the meantime, enter the yagol directory first, then run the application:
 
 `cd /path/to/yagol`
 
@@ -104,9 +104,6 @@ Don't forget to set the execute bit on the shell script you create:
 
 `chmod +x yagol.sh`
 
-It's on my to-do list to either make an installer, config file that points to the resources path, or some other source code change to locate the resources path so this won't be necessary in the future.
-
-
 **What is the maximum number of cells that YaGoL can handle?**
 
 The maximum number of cells is defined in grid.c:
@@ -120,11 +117,9 @@ This results in a total of 302,500 cells which should be enough to fill an 8K di
 
 Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
 
-
 **What about a Windows or Mac version?**
 
 The source code should compile fine on both platforms with little to no modification as long as the proper sdl2 libraries are installed. I just haven't had time yet to make a Visual Studio or Xcode project.
-
 
 **What is the Game of Life?**
 

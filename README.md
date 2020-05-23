@@ -9,8 +9,8 @@ YaGoL is an interactive Game of Life sandbox with a retro LED style. It is writt
 - Dynamic grid size that automatically resizes to fill the window
 - Choice of cell colors (red, green, blue, purple, yellow, multi)
 - Individually toggleable cells
-- Generate a random grid or clear the grid to start fresh
-- Play/stop simulation or step through one iteration at a time
+- Generate a random grid or clear the grid for a blank canvas
+- Play/stop simulation or iterate through one generation at a time
 - Adjustable speed setting
 - Two cell sizes: small (16x16) or large (32x32)
 
@@ -20,7 +20,9 @@ YaGoL is an interactive Game of Life sandbox with a retro LED style. It is writt
 
 ## Dependencies
 
-To compile YaGoL you will need a gcc compiler as well as the sdl2 and sdl2_image libraries. Your mileage may vary, but here are some examples of installing these dependencies:
+### Linux
+
+To compile YaGoL on Linux you will need a gcc compiler as well as the sdl2 and sdl2_image libraries. Your mileage may vary, but here are some examples of installing these dependencies:
 
 **Arch Linux**
 
@@ -40,7 +42,7 @@ Step 1: Clone the YaGoL repository
 
 `git clone https://github.com/delpozzo/yagol.git`
 
-Step 2: Enter the resulting directory from step 1
+Step 2: Enter into the resulting directory from step 1
 
 `cd /path/to/yagol`
 
@@ -64,17 +66,17 @@ On my to-do list to make an Xcode project.
 
 YaGoL launches by default in a 1024x768 window. This window can be resized and it can even be stretched to span multiple displays. The grid will automatically grow or shrink to fill the window.
 
-The starting grid is a random seed of red cells at 3X speed. You can press the play button to start the simulation, or customize the grid using the controls detailed below.
+The starting grid is a random seed of red cells at 3X speed. You can press the play button to start the simulation, or customize the grid using the controls below.
 
 ### Controls
 
 - **Grid Cells** - When the simulation is stopped, cells can be individually toggled on or off (alive or dead).
 - **Play/Stop** - Play or stop the game of life simulation.
 - **Step** - Iterate one generation at a time.
-- **Clear** - Clears the grid by setting all cells dead.
+- **Clear** - Clears the grid by setting all cells to dead.
 - **Random** - Randomly seed the grid with live cells.
 - **Color** - Change cell color. Choice of red, green, blue, purple, yellow, or multi (random colors).
-- **Spd** - Change simulation speed. Choice of 1X, 2X, 3X, 4X, or 5X. Default is 3X.
+- **Spd** - Change simulation speed (1X-5X). Default is 3X.
 - **Size** - Change cell size to small (16x16) or large (32x32). Default is small.
 - **Quit** - Exit the YaGoL application.
 

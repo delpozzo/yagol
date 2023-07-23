@@ -2,7 +2,7 @@
 
 ## About
 
-YaGoL is an interactive Game of Life sandbox with a retro LED style. It is written in C and uses the SDL 2.0 library for graphics and input.
+YaGoL is an interactive Game of Life sandbox. It is written in C and uses the SDL 2.0 library for graphics and input. YaGoL has been tested to compile and run on Linux, Windows, and macOS.
 
 ### Features
 
@@ -35,6 +35,36 @@ To compile YaGoL on Linux you will need a gcc compiler as well as the sdl2 and s
 
 `sudo apt-get install build-essential libsdl2-dev libsdl2-image-dev`
 
+### Windows
+
+I find it easiest to compile YaGoL on Windows using MSYS2. MSYS2 is a collection of tools and libraries providing you with an easy-to-use environment for building, installing, and running native Windows software.
+
+**Windows 11 / Windows 10 / Windows 8.1**
+
+**Step 1:** Install MSYS2 ([https://www.msys2.org](https://www.msys2.org))
+
+**Step 2:** Launch the `MSYS2 MINGW64` application to bring up a terminal
+
+**Step 3:** In the MSYS2 MINGW64 terminal, install dependencies using the following commands:
+
+`pacman -Syu`
+
+`pacman -S git mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-SDL2 mingw64/mingw-w64-x86_64-SDL2_image make`
+
+### Apple (macOS)
+
+To compile YaGoL on macOS, I find it easiest to install the SDL dependencies using Homebrew. Homebrew is a free and open-source package management system that simplifies the installation of software on macOS.
+
+**macOS Big Sur (11) (or higher)**
+
+**Step 1:** Install Homebrew ([https://brew.sh](https://brew.sh))
+
+**Step 2:** Launch the Terminal application
+
+**Step 3:** In the terminal, install dependencies via brew using the following command:
+
+`brew install sdl2 sdl2_image`
+
 ## Building
 
 ### Linux
@@ -57,11 +87,43 @@ To compile YaGoL on Linux you will need a gcc compiler as well as the sdl2 and s
 
 ### Windows
 
-On my to-do list to make a Visual Studio project.
+**Step 1:** Launch the `MSYS2 MINGW64` application to bring up a terminal
 
-### macOS
+**Step 2:** Clone the YaGoL repository
 
-On my to-do list to make an Xcode project.
+`git clone https://github.com/delpozzo/yagol.git`
+
+**Step 3:** Enter into the resulting directory from step 2
+
+`cd /path/to/yagol`
+
+**Step 4:** Compile YaGoL
+
+`make`
+
+**Step 5:** Run YaGoL
+
+`./yagol.exe`
+
+### Apple (macOS)
+
+**Step 1:** Launch the Terminal application
+
+**Step 2:** Clone the YaGoL repository
+
+`git clone https://github.com/delpozzo/yagol.git`
+
+**Step 3:** Enter into the resulting directory from step 2
+
+`cd /path/to/yagol`
+
+**Step 4:** Compile YaGoL
+
+`make`
+
+**Step 5:** Run YaGoL
+
+`./yagol`
 
 ## Instructions
 
@@ -118,10 +180,6 @@ This results in a total of 302,500 cells which should be enough to fill an 8K di
 
 Feel free to play around with the MAXCELLS values. Just keep in mind that if you increase these values more memory will be required by the application.
 
-**What about a Windows or Mac version?**
-
-The source code should compile fine on both platforms with little to no modification as long as the proper sdl2 libraries are installed. I just haven't had time yet to make a Visual Studio or Xcode project.
-
 **What is the Game of Life?**
 
 (From the [Wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life))
@@ -145,7 +203,7 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 ## License
 
-YaGoL Copyright (C) 2020 Mike Del Pozzo
+YaGoL Copyright (C) 2023 Mike Del Pozzo
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
 

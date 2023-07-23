@@ -2,11 +2,11 @@
 //          Title: YaGoL (Yet another Game of Life)
 //         Author: Mike Del Pozzo
 //    Description: Interactive Game of Life sandbox with a retro LED style.
-//        Version: 1.0.0
-//           Date: 21 May 2020
+//        Version: 1.0.1
+//           Date: 23 July 2023
 //        License: GPLv3 (see LICENSE)
 //
-//    YaGoL Copyright (C) 2020 Mike Del Pozzo
+//    YaGoL Copyright (C) 2023 Mike Del Pozzo
 //    This program is free software: you can redistribute it and/or modify
 //    it under the terms of the GNU General Public License as published by
 //    the Free Software Foundation, either version 3 of the License, or
@@ -26,20 +26,16 @@ Sprite *bgSprite = NULL;
 
 void loop()
 {
-    SDL_RenderClear(gRenderer);
+    clearScreen();
     drawBackground(bgSprite);
     if(gPlay)
     {
         updateGrid();
     }
-    else
-    {
-        SDL_Delay(10);
-    }
     drawGrid();
     updateInput();
     drawButtons();
-    SDL_RenderPresent(gRenderer);
+    nextFrame();
 }
 
 int main(int argc, char * argv[])
@@ -47,7 +43,7 @@ int main(int argc, char * argv[])
     time_t t;
     srand((unsigned) time(&t));
 
-    if(initGraphics("YaGoL v1.0.0"))
+    if(initGraphics("YaGoL v1.0.1"))
     {
         initInput();
         initGrid();

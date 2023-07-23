@@ -4,11 +4,11 @@
 //    Description: Handles all graphics-related items for YaGoL including
 //                 the SDL2 window, renderer, loading/drawing sprites, and
 //                 background tiling.
-//        Version: 1.0.0
-//           Date: 21 May 2020
+//        Version: 1.0.1
+//           Date: 23 July 2023
 //        License: GPLv3 (see LICENSE)
 //
-//    YaGoL Copyright (C) 2020 Mike Del Pozzo
+//    YaGoL Copyright (C) 2023 Mike Del Pozzo
 //    This program is free software: you can redistribute it and/or modify
 //    it under the terms of the GNU General Public License as published by
 //    the Free Software Foundation, either version 3 of the License, or
@@ -65,6 +65,25 @@ int initGraphics(char *windowTitle)
     initSpriteList();
 
     return 1;
+}
+
+void clearScreen()
+{
+    SDL_RenderClear(gRenderer);
+}
+
+void frameDelay(Uint32 delay)
+{
+    static Uint32 pass = 100;
+    Uint32 diff = SDL_GetTicks() - pass;
+    if(diff < delay) SDL_Delay(delay - diff);
+    pass = SDL_GetTicks();
+}
+
+void nextFrame()
+{
+    SDL_RenderPresent(gRenderer);
+    frameDelay(16); // 33 for 30 fps, 16 for 60 fps
 }
 
 void initSpriteList()
